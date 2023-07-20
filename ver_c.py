@@ -24,6 +24,43 @@ def Encode(string):
         elif num =="0":
             res.append("3")
     return "".join(res)
+
+def Decode(string):
+    res = []
+    for num in string:
+        if num == "2":
+            res.append("9")
+        elif num == "1":
+            res.append("8")
+        elif num == "0":
+            res.append("7")
+        elif num == "9":
+            res.append("6")
+        elif num == "8":
+            res.append("5")
+        elif num == "7":
+            res.append("4")
+        elif num == "6":
+            res.append("3")
+        elif num == "5":
+            res.append("2")
+        elif num == "4":
+            res.append("1")
+        elif num == "3":
+            res.append("0")
+    return "".join(res)
+
+if __name__ == "__main__":
+    menu_cont = True
+    while menu_cont:
+        print("Menu")
+        print("-------------")
+        print("1. Encode")
+        print("2. Decode")
+        print("3. Quit")
+        option_pick = input("Please enter an option:")
+        if option_pick == "
+
     # Always output string so the list can be joined
 if __name__ == "__main__":
     menu_cont = True
